@@ -445,7 +445,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3940a8c82ac9ba040bfc0da5c8fc4628, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 0}
+  lifeText: {fileID: 1724932121}
+  scoreText: {fileID: 321914233}
+  highScoreText: {fileID: 239685286}
+  enemyPrefab: {fileID: 1855889302417851229, guid: ba7c1eb480da80544b58439757b3f5aa,
+    type: 3}
 --- !u!4 &663070946
 Transform:
   m_ObjectHideFlags: 0
@@ -580,8 +584,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  bulletPrefab: {fileID: 0}
-  bulletDelay: 0.5
+  bulletPrefab: {fileID: 8029432632687441755, guid: c3f52728b06b7834a8094c739fc70fd5,
+    type: 3}
+  bulletDelay: 0.1
+  bulletPosition: {fileID: 21919474}
 --- !u!58 &695403104
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -612,7 +618,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0.01
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
